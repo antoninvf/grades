@@ -1,0 +1,111 @@
+html {
+    scroll-behavior: smooth;
+    overflow: visible;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    font-size: 6vh;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+.outputtext {
+    font-size: 1.8vh;
+    color: black;
+}
+
+form {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+input {
+    font-size: 1.8vh;
+    border: 0.1vh #cfcfcf solid;
+    border-radius: 0.4vh;
+}
+
+.gradeInput {
+    height: 3vh;
+    width: 40vh;
+    font-size: 1.8vh;
+}
+
+.weightInput {
+    height: 3vh;
+    width: 40vh;
+    font-size: 1.8vh;
+    margin-left: 1vh;
+}
+
+.bottombtns {
+    font-size: 1.8vh;
+    padding-left: 30%;
+    text-align: left;
+    padding-top: 2vh;
+}
+
+.addbtn {
+    text-align: center;
+    font-size: 1.8vh;
+    color: white;
+    background-color: #1ccf1f;
+    height: 3vh;
+    border-radius: 0.4vh;
+    border: 0;
+}
+
+.addbtn:hover {
+    background-color: #18b31b;
+}
+
+.calcbtn {
+    text-align: left;
+    font-size: 1.8vh;
+    color: white;
+    background-color: dodgerblue;
+    height: 3vh;
+    border-radius: 0.4vh;
+    border: 0;
+}
+
+.calcbtn:hover {
+    background-color: #1b81e5;
+}
+
+.gradetext {
+    padding-top: 3vh;
+    font-size: 1.8vh;
+    text-align: left;
+    padding-left: 30%;
+    padding-right: 1vh;
+    margin: 0;
+}
+
+.fadeinanimate {
+    animation: fadein ease 1.5s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
