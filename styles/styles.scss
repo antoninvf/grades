@@ -25,6 +25,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #111;
+    margin-bottom: 2vh;
 }
 
 .title {
@@ -54,13 +55,13 @@ input {
 }
 
 .input {
+    padding-top: 0.5vh;
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
 
 .gradetext {
-    padding-top: 3vh;
     font-size: 1.8vh;
     text-align: left;
     padding-right: 1vh;
