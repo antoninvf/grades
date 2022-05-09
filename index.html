@@ -1,24 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Am I Failing my Class?</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grades Calculator</title>
+    <meta name="description" content="A simple website for calculating grades with weights and percentages.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
-    <script src="script.js"></script>
 </head>
-<body>
-<p class="title fadeinanimate">Am I Failing my Class?</p>
 
-<div id="grades" class="grades">
-</div>
-<div class="bottombtns">
-    <button id="addgrade" class="addbtn" onclick="addGrade()">Add Grade</button>
-    <button id="calcgrade" class="calcbtn" onclick="calculateGrades()">Calculate Average</button>
-    <p id="fail" class="outputtext"></p>
-    <p id="meanPerc" class="outputtext"></p>
-</div>
+<body>
+    <header>
+        <p class="title">Am I Failing my Class?</p>
+    </header>
+
+    <div class="middle">
+        <div id="grades" class="grades"></div>
+        <div class="bottombtns">
+            <button id="addGrade" class="addbtn">Add Grade</button>
+            <button id="calcGrade" class="calcbtn">Calculate Average</button>
+            <p id="fail" class="outputtext"></p>
+            <p id="meanPerc" class="outputtext"></p>
+        </div>
+    </div>
+
+    <script src="grades.js" async defer></script>
 </body>
+
 </html>

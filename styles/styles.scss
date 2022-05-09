@@ -1,3 +1,7 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+$inputWidth: 15vh;
+
 html {
     scroll-behavior: smooth;
     overflow: visible;
@@ -10,28 +14,37 @@ html {
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
 }
 
 .title {
     font-size: 6vh;
-    color: black;
+    color: white;
     text-align: center;
     font-weight: bolder;
     margin: 0;
-    padding-top: 5vh;
-    padding-bottom: 10vh;
+}
+
+.middle {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
 }
 
 .outputtext {
     font-size: 1.8vh;
     color: black;
-}
-
-form {
-    padding-top: 10vh;
-    text-align: center;
 }
 
 input {
@@ -40,23 +53,36 @@ input {
     border-radius: 0.4vh;
 }
 
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.gradetext {
+    padding-top: 3vh;
+    font-size: 1.8vh;
+    text-align: left;
+    padding-right: 1vh;
+    margin: 0;
+}
+
 .gradeInput {
     height: 3vh;
-    width: 40vh;
+    width: $inputWidth;
     font-size: 1.8vh;
 }
 
 .weightInput {
     height: 3vh;
-    width: 40vh;
+    width: $inputWidth;
     font-size: 1.8vh;
     margin-left: 1vh;
 }
 
 .bottombtns {
     font-size: 1.8vh;
-    padding-left: 30%;
-    text-align: left;
+    text-align: center;
     padding-top: 2vh;
 }
 
@@ -86,26 +112,4 @@ input {
 
 .calcbtn:hover {
     background-color: #1b81e5;
-}
-
-.gradetext {
-    padding-top: 3vh;
-    font-size: 1.8vh;
-    text-align: left;
-    padding-left: 30%;
-    padding-right: 1vh;
-    margin: 0;
-}
-
-.fadeinanimate {
-    animation: fadein ease 1.5s;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
