@@ -2,6 +2,8 @@
 TODO: Change how grades are being stored. Currently it is storing them just in HTML and stuff is gotten from the id in html.
 TODO: A better solution is to make an array for the grades to be stored in with a class representing the grade array(with grade, weight and ID attributes)
 TODO: Then a function that will display data from the array like I did in pokedex or skolaOffline.
+
+TODO: Another idea is an "Information Button" -> ℹ️ , which would show what percentages mean what grades, like 100-90% is a 1 etc.
 */
 window.onload = async () => {
     document.getElementById('addGrade').addEventListener('click', addGrade);
