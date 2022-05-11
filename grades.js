@@ -4,6 +4,8 @@ TODO: A better solution is to make an array for the grades to be stored in with 
 TODO: Then a function that will display data from the array like I did in pokedex or skolaOffline.
 
 TODO: Another idea is an "Information Button" -> ℹ️ , which would show what percentages mean what grades, like 100-90% is a 1 etc.
+
+TODO: Fix a bug with the gradeText duplicating due to the gradesCreated number going back down (the array and class method should fix this)
 */
 window.onload = async () => {
     document.getElementById('addGrade').addEventListener('click', addGrade);
@@ -23,7 +25,7 @@ window.onload = async () => {
 
         const gradetext = document.createElement('label');
         gradetext.classList.add('gradetext');
-        gradetext.innerText = `#${gradesCreated.toFixed().padStart(3, 0)}`;
+        // gradetext.innerText = `#${gradesCreated.toFixed().padStart(3, 0)}`;
 
         const gradeInput = document.createElement('input');
         gradeInput.type = 'number';
