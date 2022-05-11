@@ -44,6 +44,7 @@ header {
 }
 
 .outputtext {
+    margin-top: 1vh;
     font-size: 1.8vh;
     color: black;
 }
@@ -52,6 +53,7 @@ input {
     font-size: 1.8vh;
     border: 0.1vh #cfcfcf solid;
     border-radius: 0.4vh;
+    padding-left: 0.5vh;
 }
 
 .input {
@@ -81,36 +83,26 @@ input {
     margin-left: 1vh;
 }
 
+.delBtn {
+    color: red;
+    text-decoration: none;
+    margin-left: 0.5vh;
+    align-self: baseline;
+    font-size: 1.8vh;
+}
+
+.delBtn:hover {
+    color: darkred;
+    cursor: pointer;
+}
+
 .bottombtns {
-    font-size: 1.8vh;
     text-align: center;
-    padding-top: 2vh;
+    margin-top: 2vh;
 }
 
-.addbtn {
-    text-align: center;
-    font-size: 1.8vh;
-    color: white;
-    background-color: #1ccf1f;
-    height: 3vh;
-    border-radius: 0.4vh;
-    border: 0;
-}
-
-.addbtn:hover {
-    background-color: #18b31b;
-}
-
-.calcbtn {
-    text-align: left;
-    font-size: 1.8vh;
-    color: white;
-    background-color: dodgerblue;
-    height: 3vh;
-    border-radius: 0.4vh;
-    border: 0;
-}
-
-.calcbtn:hover {
-    background-color: #1b81e5;
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 4vh;
+    }
 }
