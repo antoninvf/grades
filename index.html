@@ -4,12 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Grades Calculator</title>
+    <title>Grades - Am I Failing my Class?</title>
     <meta name="description" content="A simple website for calculating grades with weights and percentages.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 
 <body>
@@ -20,8 +25,8 @@
     <div class="middle">
         <div id="grades" class="grades"></div>
         <div class="bottombtns">
-            <button id="addGrade" class="addbtn">Add Grade</button>
-            <button id="calcGrade" class="calcbtn">Calculate Average</button>
+            <button id="addGrade" class="btn btn-success">Add Grade</button>
+            <button id="calcGrade" class="btn btn-primary">Calculate Average</button>
             <p id="fail" class="outputtext"></p>
             <p id="meanPerc" class="outputtext"></p>
         </div>
