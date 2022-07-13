@@ -1,0 +1,37 @@
+<div class="middle">
+  <h1 class="mt-3">Grade Calculator</h1>
+  <div class="d-flex flex-column align-items-center w-50 h-75 mt-3">
+
+
+    <div class="form-group d-flex gap-2">
+      <div class="flex-grow-1">
+        <label>Grade Input*</label>
+        <input #gradeInput=ngModel [(ngModel)]="gradeInputValue" required type="number" class="form-control"
+          name="gradeInput" />
+        <small *ngIf="gradeInput.touched && gradeInput.errors?.['required']" class="text-danger small">Field is
+          Required</small>
+      </div>
+      <div class="flex-grow-1">
+        <label>Weight Input*</label>
+        <input #weightInput=ngModel [(ngModel)]="weightInputValue" required type="number" class="form-control"
+          name="weightInput" />
+        <small *ngIf="weightInput.touched && weightInput.errors?.['required']" class="text-danger small">Field is
+          Required</small>
+      </div>
+    </div>
+    <button type="button" class="btn btn-success mt-3"
+      [disabled]="gradeInputValue < 0 || weightInputValue < 0 || gradeInputValue.toString() === 'NaN' || weightInputValue.toString() === 'NaN'"
+      (click)="addGrade()">Add Grade</button>
+
+    <div class="outputBox mt-3">
+      <ng-container *ngIf="calculate().toString() !== 'NaN'">
+        <h3>Mean: {{calculate()}}%</h3>
+      </ng-container>
+    </div>
+
+    <div class="mt-3" *ngFor="let i of grades; let o = index">
+      <div class="grade">#{{o+1}} {{i.grade}}% {{i.weight}}%</div>
+    </div>
+
+  </div>
+</div>

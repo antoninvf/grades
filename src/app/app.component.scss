@@ -1,0 +1,17 @@
+.middle {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.grade {
+  background-color: rgb(219, 219, 219);
+  padding: 1vh 2vh;
+  word-spacing: 10vh;
+  font-size: 2vh;
+  font-weight: bold;
+  border-radius: 0.3vh;
+  margin: 0;
+}

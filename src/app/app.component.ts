@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GradeCalcService } from './services/gradeCalc.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'grades';
+
+  public gcs: GradeCalcService = new GradeCalcService();
+
+  public gradeInputValue: number = parseInt('');
+  public weightInputValue: number = parseInt('');
+
+  get grades() {
+    return this.gcs.getGrades()
+  }
+
+  calculate() {
+    return this.gcs.calc()
+  }
+
+  addGrade() {
+    this.gcs.addGrade(this.gradeInputValue, this.weightInputValue)
+  }
 }
